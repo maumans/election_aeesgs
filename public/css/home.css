@@ -1,0 +1,75 @@
+.bienvenu
+{
+    animation-name: bienvenuW;
+    animation-duration: 0.7s;
+}
+
+
+#ligne
+{
+    animation-name: ligneAnim;
+    animation-delay:  0.1s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes ligneAnim {
+    from{
+        width: 0%;
+        height: 0px;
+    }
+    to{
+        width: 95%;
+        height: 2px
+    }
+
+}
+
+@keyframes bienvenuW {
+    0%{transform: scale(0)}
+
+    40%{transform: scale(0.9)}
+    60%{transform: scale(0.8)}
+
+    100%{transform: scale(1)}
+}
+
+#divnon:hover,#divoui:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+
+
+.divbtn
+{
+    background-color: lightgray;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition-duration: 0.5s;
+}
+
+.divbtnactiveoui
+{
+    cursor: pointer;
+    background-color: green;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+.divbtnactivenon
+{
+    cursor: pointer;
+    background-color: firebrick;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+
+
+
